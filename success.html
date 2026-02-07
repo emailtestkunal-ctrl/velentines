@@ -90,7 +90,7 @@ const successDays = {
   14: { title:"Valentine's Day ❤️", msg:"You are my today, tomorrow and forever.", bg:"linear-gradient(135deg,#ff0844,#ffb199)", emoji:"❤️" }
 };
 
-const today = 14;
+const today = new Date().getDate();
 const theme = successDays[today] || successDays[7];
 
 document.body.style.background = theme.bg;
